@@ -33,7 +33,9 @@ async function checkWeather(city) {
         } else if (data.weather[0].main == "Humidity") {
             weatherIcon.src = "images/humidity.png";
         }
-      
+        document.querySelector(".weather").style.display = "block";
+        document.querySelector(".error").style.display = "none";
+    }
 }
 
 // Add an event listener to the button for checking the weather
